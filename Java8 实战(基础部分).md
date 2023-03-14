@@ -212,7 +212,7 @@ inventory.sort(comparing(Apple::getWeight));
 + 使用Lambda表达式
 
   ```java
-  inventory.sort((Apple al, Apple a2)-> al.getWeight 0.compareTo(a2. getWeight()));
+  inventory.sort((Apple al, Apple a2)-> al.getWeight().compareTo(a2. getWeight()));
   
   // Java编译器可以根据Lambda出现的上下文来推断Lambda表达式参数的类型
   inventory.sort((al, a2)-> al.getWeight().compareTo(a2. getWeight()));
